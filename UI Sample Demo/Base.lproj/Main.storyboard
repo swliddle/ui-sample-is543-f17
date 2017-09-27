@@ -5,38 +5,29 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--One-->
+        <scene sceneID="BdW-RT-h0u">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UI_Sample_Demo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="pwL-l5-ZzF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YBF-V3-Eug">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="Z3P-pr-eYS"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k2G-oL-3ba">
-                        <rightBarButtonItems>
-                            <barButtonItem title="Item" image="InfoIcon" id="JYs-TD-rAc"/>
-                            <barButtonItem style="plain" id="lRI-2u-1QN">
-                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="gXx-G4-GyS">
-                                    <rect key="frame" x="293" y="11" width="22" height="22"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                </button>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                    <navigationItem key="navigationItem" title="One" id="Ad9-d0-34Q">
+                        <barButtonItem key="rightBarButtonItem" image="InfoIcon" id="lMr-83-lb6"/>
                     </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4t-gu-Z8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479.19999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="518" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Three-->
         <scene sceneID="vs3-il-HdK">
             <objects>
                 <viewController id="T3S-mm-AKw" sceneMemberID="viewController">
@@ -46,13 +37,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="jLZ-C2-bMq"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OS9-5b-6Gi"/>
+                    <navigationItem key="navigationItem" title="Three" id="OS9-5b-6Gi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T4w-Pr-wh9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="478" y="1464"/>
+            <point key="canvasLocation" x="518" y="1613"/>
         </scene>
-        <!--View Controller-->
+        <!--Two-->
         <scene sceneID="VIG-xV-KFc">
             <objects>
                 <viewController id="BzI-K1-fvy" sceneMemberID="viewController">
@@ -62,11 +53,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="fbz-XU-Lsu"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5ja-zE-PyJ"/>
+                    <navigationItem key="navigationItem" title="Two" id="5ja-zE-PyJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5du-9f-k7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="479" y="799"/>
+            <point key="canvasLocation" x="519" y="869"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="1FA-gX-902">
@@ -85,13 +76,13 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cnX-z4-XVo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1298" y="1143"/>
+            <point key="canvasLocation" x="-1223" y="1039"/>
         </scene>
-        <!--Item-->
+        <!--One-->
         <scene sceneID="8Nx-sk-2VR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zaW-No-3Dr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="InfoIcon" badgeValue="5" selectedImage="InfoIcon" id="lyM-Dh-v8Q"/>
+                    <tabBarItem key="tabBarItem" title="One" image="InfoIcon" badgeValue="5" id="lyM-Dh-v8Q"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="byq-E7-GUX">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -99,18 +90,18 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7c1-LQ-Dol"/>
+                        <segue destination="pwL-l5-ZzF" kind="relationship" relationship="rootViewController" id="qet-tV-EBP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCs-Hu-gnK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-343" y="134"/>
         </scene>
-        <!--Item 1-->
+        <!--Two-->
         <scene sceneID="j9L-wZ-d0W">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9X8-as-6ZJ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" id="WMf-ec-xqJ"/>
+                    <tabBarItem key="tabBarItem" title="Two" id="WMf-ec-xqJ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P9u-v7-IaE">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -123,13 +114,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YEG-iR-n0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="799.70014992503752"/>
+            <point key="canvasLocation" x="-345" y="869"/>
         </scene>
-        <!--Item 2-->
+        <!--Three-->
         <scene sceneID="0qA-11-vBH">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CTj-gp-Ec1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Bk0-bj-rrK"/>
+                    <tabBarItem key="tabBarItem" title="Three" id="Bk0-bj-rrK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R1g-qg-k1Z">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -142,7 +133,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pIT-Zt-aQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-344" y="1464.4677661169417"/>
+            <point key="canvasLocation" x="-343" y="1614"/>
         </scene>
     </scenes>
     <resources>
