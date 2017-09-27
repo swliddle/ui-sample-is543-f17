@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +21,15 @@
                         <viewLayoutGuide key="safeArea" id="Z3P-pr-eYS"/>
                     </view>
                     <navigationItem key="navigationItem" title="One" id="Ad9-d0-34Q">
-                        <barButtonItem key="rightBarButtonItem" image="InfoIcon" id="lMr-83-lb6"/>
+                        <rightBarButtonItems>
+                            <barButtonItem image="InfoIcon" id="lMr-83-lb6"/>
+                            <barButtonItem id="nkF-v2-9oM">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="Yca-FG-PEv">
+                                    <rect key="frame" x="293" y="11" width="22" height="22"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m4t-gu-Z8M" userLabel="First Responder" sceneMemberID="firstResponder"/>
